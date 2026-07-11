@@ -107,19 +107,25 @@ export function Footer() {
                 TikTok · {site.tiktokHandle}
               </a>
             </li>
-            <li className="flex flex-wrap gap-x-4 gap-y-1 pt-2">
+            <li className="flex flex-wrap items-center gap-x-2 gap-y-1 pt-2">
               <Link
                 href="/terminos"
                 className="underline-offset-2 hover:text-emerald hover:underline"
               >
                 Términos y condiciones
               </Link>
+              <span aria-hidden className="text-ink/35">
+                ·
+              </span>
               <Link
                 href="/privacidad"
                 className="underline-offset-2 hover:text-emerald hover:underline"
               >
                 Protección de datos
               </Link>
+              <span aria-hidden className="text-ink/35">
+                ·
+              </span>
               <Link
                 href="/#esnna"
                 className="underline-offset-2 hover:text-emerald hover:underline"
