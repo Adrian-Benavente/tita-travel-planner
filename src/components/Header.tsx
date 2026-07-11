@@ -45,8 +45,8 @@ export function Header() {
             className="size-9 rounded-full object-cover md:size-10"
             priority
           />
-          <span className="font-display text-lg font-semibold tracking-wide text-emerald md:text-xl">
-            Tita
+          <span className="font-display text-sm font-semibold tracking-wide text-emerald sm:text-base md:text-lg">
+            Tita Travel Planner
           </span>
         </Link>
 
