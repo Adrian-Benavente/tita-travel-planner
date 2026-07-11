@@ -17,8 +17,8 @@ export const site = {
     country: "Perú",
   },
   phones: [
-    { label: "WhatsApp", number: "920614136", whatsapp: true },
-    { label: "Móvil", number: "998406640", whatsapp: false },
+    { label: "WhatsApp", number: "920614136", display: "+51 920614136", whatsapp: true },
+    { label: "Móvil", number: "998406640", display: "+51 998406640", whatsapp: false },
   ],
   emails: {
     primary: "titatravelplanner@gmail.com",

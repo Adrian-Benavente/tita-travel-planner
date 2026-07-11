@@ -59,14 +59,14 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="transition-colors hover:text-emerald"
               >
-                Tel. {site.phones[0].number}
+                Tel. {site.phones[0].display}
               </a>
               {" · "}
               <a
                 href={`tel:+51${site.phones[1].number}`}
                 className="transition-colors hover:text-emerald"
               >
-                {site.phones[1].number}
+                {site.phones[1].display}
               </a>
             </li>
             <li>

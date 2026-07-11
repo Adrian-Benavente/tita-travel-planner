@@ -122,7 +122,7 @@ export default function TerminosPage() {
           <p className="mt-3">
             Domicilio: {site.address.line}, {site.address.district},{" "}
             {site.address.city}, {site.address.country}. Teléfonos:{" "}
-            {site.phones.map((p) => p.number).join(" / ")}. Correo:{" "}
+            {site.phones.map((p) => p.display).join(" / ")}. Correo:{" "}
             {site.emails.primary}.
           </p>
         </section>

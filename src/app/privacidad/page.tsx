@@ -87,7 +87,7 @@ export default function PrivacidadPage() {
             >
               {site.emails.primary}
             </a>{" "}
-            o al WhatsApp {site.phones[0].number}, identificándose y precisando
+            o al WhatsApp {site.phones[0].display}, identificándose y precisando
             su solicitud.
           </p>
         </section>

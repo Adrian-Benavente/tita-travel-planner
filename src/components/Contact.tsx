@@ -25,7 +25,7 @@ export function Contact() {
             rel="noopener noreferrer"
             className="inline-flex w-full max-w-sm items-center justify-center rounded-sm bg-emerald px-6 py-3.5 text-sm font-medium text-ivory transition-colors hover:bg-sage-dark"
           >
-            WhatsApp · {site.phones[0].number}
+            WhatsApp · {site.phones[0].display}
           </a>
           <a
             href={site.emailUrl}
@@ -50,7 +50,7 @@ export function Contact() {
             Facebook · Tita Travel Planner
           </a>
           <p className="text-sm text-ink/60">
-            También: {site.phones[1].number}
+            También: {site.phones[1].display}
           </p>
         </Reveal>
       </div>
