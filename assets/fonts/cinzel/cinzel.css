@@ -1,0 +1,55 @@
+/* cinzel-black */
+@font-face {
+	font-family: "Cinzel";
+	font-style: normal;
+	font-weight: 900;
+	font-stretch: 100%;
+	src: local("Cinzel Black"), local("Cinzel-Black"), url(cinzel-black.woff2) format("woff2"), url(cinzel-black.woff) format("woff");
+	font-display: swap;
+}
+/* cinzel-bold */
+@font-face {
+	font-family: "Cinzel";
+	font-style: normal;
+	font-weight: 700;
+	font-stretch: 100%;
+	src: local("Cinzel Bold"), local("Cinzel-Bold"), url(cinzel-bold.woff2) format("woff2"), url(cinzel-bold.woff) format("woff");
+	font-display: swap;
+}
+/* cinzel-extrabold */
+@font-face {
+	font-family: "Cinzel";
+	font-style: normal;
+	font-weight: 800;
+	font-stretch: 100%;
+	src: local("Cinzel ExtraBold"), local("Cinzel-ExtraBold"), url(cinzel-extrabold.woff2) format("woff2"), url(cinzel-extrabold.woff) format("woff");
+	font-display: swap;
+}
+/* cinzel-medium */
+@font-face {
+	font-family: "Cinzel";
+	font-style: normal;
+	font-weight: 500;
+	font-stretch: 100%;
+	src: local("Cinzel Medium"), local("Cinzel-Medium"), url(cinzel-medium.woff2) format("woff2"), url(cinzel-medium.woff) format("woff");
+	font-display: swap;
+}
+/* cinzel */
+@font-face {
+	font-family: "Cinzel";
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: 100%;
+	src: local("Cinzel Regular"), local("Cinzel-Regular"), url(cinzel.woff2) format("woff2"), url(cinzel.woff) format("woff");
+	font-display: swap;
+}
+/* cinzel-semibold */
+@font-face {
+	font-family: "Cinzel";
+	font-style: normal;
+	font-weight: 600;
+	font-stretch: 100%;
+	src: local("Cinzel SemiBold"), local("Cinzel-SemiBold"), url(cinzel-semibold.woff2) format("woff2"), url(cinzel-semibold.woff) format("woff");
+	font-display: swap;
+}
+

@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-sage: var(--sage);
+  --color-sage-light: var(--sage-light);
+  --color-sage-dark: var(--sage-dark);
+  --color-emerald: var(--emerald);
+  --color-ivory: var(--ivory);
+  --color-sand: var(--sand);
+  --color-gold: var(--gold);
+  --color-deep-blue: var(--deep-blue);
+  --color-ink: var(--ink);
+  --font-cinzel: var(--font-cinzel);
+  --font-montserrat: var(--font-montserrat);
+  --font-allura: var(--font-allura);
+}
+
+:root {
+  --sage: #8fa88a;
+  --sage-light: #c5d4c1;
+  --sage-dark: #5f7a5a;
+  --emerald: #1f5c4a;
+  --ivory: #f7f4ee;
+  --sand: #e8dfd0;
+  --gold: #c4a574;
+  --deep-blue: #1a3a4a;
+  --ink: #3f3f3f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--ivory);
+  color: var(--ink);
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--sage-light);
+  color: var(--emerald);
+}
+
+.font-display {
+  font-family: var(--font-cinzel), serif;
+}
+
+.font-script {
+  font-family: var(--font-allura), cursive;
+}
+
+.bg-atmosphere {
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 20%, rgba(143, 168, 138, 0.28), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 15% 80%, rgba(196, 165, 116, 0.12), transparent 50%),
+    linear-gradient(165deg, #faf8f4 0%, var(--ivory) 40%, var(--sand) 100%);
+}
+
+.section-pad {
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .section-pad {
+    padding-inline: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-pad {
+    padding-inline: 4rem;
+  }
+}
