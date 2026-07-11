@@ -21,7 +21,7 @@ export const site = {
     { label: "Móvil", number: "998406640", whatsapp: false },
   ],
   emails: {
-    primary: "titaacostaleal@gmail.com",
+    primary: "titatravelplanner@gmail.com",
     alternate: "titaacostalealargentina@gmail.com",
   },
   whatsappUrl:
@@ -29,7 +29,7 @@ export const site = {
     encodeURIComponent(
       "Hola Tita, me gustaría recibir asesoría para planificar un viaje.",
     ),
-  emailUrl: "mailto:titaacostaleal@gmail.com",
+  emailUrl: "mailto:titatravelplanner@gmail.com",
 } as const;
 
 export const navLinks = [
