@@ -30,6 +30,10 @@ export const site = {
       "Hola Tita, me gustaría recibir asesoría para planificar un viaje.",
     ),
   emailUrl: "mailto:titatravelplanner@gmail.com",
+  instagramUrl: "https://www.instagram.com/titatravelplanner",
+  instagramHandle: "@titatravelplanner",
+  facebookUrl:
+    "https://www.facebook.com/profile.php?id=61590869237750",
 } as const;
 
 export const navLinks = [

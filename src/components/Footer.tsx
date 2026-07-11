@@ -77,6 +77,26 @@ export function Footer() {
                 {site.emails.primary}
               </a>
             </li>
+            <li>
+              <a
+                href={site.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-emerald"
+              >
+                Instagram · {site.instagramHandle}
+              </a>
+            </li>
+            <li>
+              <a
+                href={site.facebookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-emerald"
+              >
+                Facebook · Tita Travel Planner
+              </a>
+            </li>
             <li className="flex flex-wrap gap-x-4 gap-y-1 pt-2">
               <Link
                 href="/terminos"

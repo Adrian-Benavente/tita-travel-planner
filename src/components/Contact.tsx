@@ -33,7 +33,23 @@ export function Contact() {
           >
             {site.emails.primary}
           </a>
-          <p className="mt-2 text-sm text-ink/60">
+          <a
+            href={site.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 text-sm font-medium text-emerald/80 underline-offset-2 transition-colors hover:text-emerald hover:underline"
+          >
+            Instagram · {site.instagramHandle}
+          </a>
+          <a
+            href={site.facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-emerald/80 underline-offset-2 transition-colors hover:text-emerald hover:underline"
+          >
+            Facebook · Tita Travel Planner
+          </a>
+          <p className="text-sm text-ink/60">
             También: {site.phones[1].number}
           </p>
         </Reveal>
