@@ -49,6 +49,14 @@ export function Contact() {
           >
             Facebook · Tita Travel Planner
           </a>
+          <a
+            href={site.tiktokUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm font-medium text-emerald/80 underline-offset-2 transition-colors hover:text-emerald hover:underline"
+          >
+            TikTok · {site.tiktokHandle}
+          </a>
           <p className="text-sm text-ink/60">
             También: {site.phones[1].display}
           </p>

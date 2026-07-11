@@ -34,6 +34,8 @@ export const site = {
   instagramHandle: "@titatravelplanner",
   facebookUrl:
     "https://www.facebook.com/profile.php?id=61590869237750",
+  tiktokUrl: "https://www.tiktok.com/@titaacostaleal",
+  tiktokHandle: "@titaacostaleal",
 } as const;
 
 export const navLinks = [
