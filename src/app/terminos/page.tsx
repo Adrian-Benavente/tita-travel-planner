@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Términos y condiciones",
@@ -12,130 +11,111 @@ export default function TerminosPage() {
   return (
     <article className="section-pad mx-auto max-w-3xl pb-20 pt-28 md:pt-32">
       <p className="text-xs font-medium uppercase tracking-[0.25em] text-gold">
-        Documento legal · Borrador para revisión
+        Documento legal
       </p>
       <h1 className="font-display mt-3 text-3xl font-semibold text-emerald sm:text-4xl">
-        Términos y condiciones de uso
+        Términos y Condiciones de Uso
       </h1>
-      <p className="mt-4 text-sm text-ink/60">
-        Última actualización: julio 2026. Prestador: {site.legalName}, con
-        nombre comercial {site.commercialName} (RUC {site.ruc}), operando bajo
-        la marca {site.brand}.
+      <p className="mt-6 text-base leading-relaxed text-ink/85">
+        Bienvenido a <strong className="font-semibold">Tita Travel Planner</strong>,
+        marca comercial operada por{" "}
+        <strong className="font-semibold">ACOSTA LEAL BERTHA CLEOFE</strong> (RUC
+        10445376006).
+      </p>
+      <p className="mt-4 text-base leading-relaxed text-ink/85">
+        Al utilizar nuestro sitio web y contratar nuestros servicios de asesoría
+        de viajes, aceptas los presentes términos y condiciones en su totalidad.
       </p>
 
-      <div className="prose-legal mt-10 space-y-8 text-base leading-relaxed text-ink/85">
+      <div className="mt-10 space-y-8 text-base leading-relaxed text-ink/85">
         <section>
           <h2 className="font-display text-xl font-semibold text-emerald">
-            1. Objeto
+            1. Naturaleza del Servicio
           </h2>
           <p className="mt-3">
-            Estos términos regulan el uso del sitio web y la contratación de
-            servicios de asesoría y planificación de viajes ofrecidos por{" "}
-            {site.brand}. Al solicitar una cotización o contratar un servicio,
-            usted acepta estas condiciones.
+            Tita Travel Planner actúa estrictamente como una agencia de viajes y
+            turismo de intermediación y asesoría personalizada (Travel Planner).
+          </p>
+          <p className="mt-3">
+            Nuestro servicio consiste en el diseño de itinerarios, consultoría,
+            organización de viajes y gestión de reservas frente a terceros
+            proveedores (aerolíneas, hoteles, operadores turísticos locales,
+            transportistas, seguros de viaje, etc.).
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-semibold text-emerald">
-            2. Naturaleza del servicio
+            2. Responsabilidad sobre Proveedores Terceros
           </h2>
           <p className="mt-3">
-            {site.brand} brinda asesoría personalizada, diseño de itinerarios y
-            gestión de reservas a través de proveedores terceros (aerolíneas,
-            hoteles, operadores, etc.). Salvo que se indique expresamente lo
-            contrario por escrito, no actúa como operador turístico de los
-            servicios de transporte o alojamiento en sí mismos.
+            Tita Travel Planner no es responsable directo por cancelaciones,
+            demoras, huelgas, pérdidas de equipaje, quiebras o fallas operativas
+            causadas por los proveedores finales de los servicios turísticos
+            (hoteles, aerolíneas, etc.).
+          </p>
+          <p className="mt-3">
+            La agencia se compromete a brindar soporte activo al cliente para
+            gestionar los reclamos correspondientes, de acuerdo con las políticas
+            de cada proveedor.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-semibold text-emerald">
-            3. Políticas comerciales de cobro
-          </h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5">
-            <li>
-              Los honorarios por asesoría y los montos de servicios se
-              comunicarán por escrito (correo o WhatsApp) antes de cualquier
-              pago.
-            </li>
-            <li>
-              Puede solicitarse un adelanto para iniciar la planificación o
-              asegurar tarifas; el porcentaje o monto se detallará en la
-              propuesta.
-            </li>
-            <li>
-              Los pagos se realizan mediante los medios indicados en la
-              cotización. Se emitirá el comprobante electrónico correspondiente
-              (recibo por honorarios u otro autorizado).
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="font-display text-xl font-semibold text-emerald">
-            4. Cancelación de servicios y reembolsos
-          </h2>
-          <ul className="mt-3 list-disc space-y-2 pl-5">
-            <li>
-              <strong>Honorarios de asesoría:</strong> si el cliente cancela
-              antes de haberse entregado el itinerario o propuesta final, podrá
-              solicitarse la devolución parcial o total del adelanto según el
-              trabajo ya realizado, lo que se informará caso por caso.
-            </li>
-            <li>
-              <strong>Servicios de terceros</strong> (vuelos, hoteles, tours,
-              seguros, etc.): las cancelaciones, cambios y reembolsos se rigen
-              exclusivamente por las políticas del proveedor. {site.brand}{" "}
-              facilitará la gestión ante el proveedor, sin garantizar el
-              reembolso cuando la política del tercero no lo permita.
-            </li>
-            <li>
-              Toda solicitud de cancelación debe enviarse por escrito al correo{" "}
-              <a
-                href={site.emailUrl}
-                className="text-emerald underline-offset-2 hover:underline"
-              >
-                {site.emails.primary}
-              </a>{" "}
-              o al WhatsApp oficial.
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="font-display text-xl font-semibold text-emerald">
-            5. Responsabilidad
+            3. Políticas de Pago y Comisiones
           </h2>
           <p className="mt-3">
-            {site.brand} actúa con diligencia profesional en la asesoría. No
-            responde por demoras, cancelaciones, cambios de itinerario,
-            sobreventas u otras contingencias atribuibles a proveedores
-            externos, fuerza mayor o decisiones del viajero.
+            Los honorarios por el servicio de asesoría y diseño de itinerarios
+            personalizados se pagan por adelantado y no son reembolsables una
+            vez iniciado el trabajo de planificación.
+          </p>
+          <p className="mt-3">
+            Las cotizaciones de pasajes o paquetes están sujetas a variaciones de
+            precio y disponibilidad por parte de los proveedores hasta que se
+            efectúe el pago total y se emitan los boletos oficiales.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-semibold text-emerald">
-            6. Contacto
+            4. Cancelaciones, Modificaciones y Reembolsos
           </h2>
           <p className="mt-3">
-            Domicilio: {site.address.line}, {site.address.district},{" "}
-            {site.address.city}, {site.address.country}. Teléfonos:{" "}
-            {site.phones.map((p) => p.display).join(" / ")}. Correo:{" "}
-            {site.emails.primary}.
+            Cualquier cambio de fecha, destino o anulación solicitado por el
+            cliente estará sujeto a las penalidades y restricciones tarifarias
+            fijadas contractualmente por la aerolínea u operador turístico
+            respectivo.
+          </p>
+          <p className="mt-3">
+            Tita Travel Planner cobrará una tarifa administrativa por la gestión
+            de cambios o reembolsos, la cual será informada previamente al
+            pasajero.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-display text-xl font-semibold text-emerald">
+            5. Documentación de Viaje
+          </h2>
+          <p className="mt-3">
+            Es responsabilidad exclusiva del pasajero contar con la documentación
+            en regla exigida por las autoridades migratorias (pasaporte vigente
+            con una vigencia mínima de seis meses, visados obligatorios,
+            permisos de viaje para menores de edad, vacunas o declaraciones
+            juradas de salud).
+          </p>
+          <p className="mt-3">
+            La agencia no asume responsabilidad en caso de que se le niegue el
+            embarque o el ingreso al destino por falta de la documentación
+            requerida.
           </p>
         </section>
       </div>
 
-      <p className="mt-12 text-sm text-ink/55">
-        Este texto es un borrador orientativo para la publicación del canal
-        digital. Debe ser revisado y aprobado por la titular antes de su uso
-        definitivo ante MINCETUR.
-      </p>
       <Link
         href="/"
-        className="mt-8 inline-block text-sm font-medium text-emerald underline-offset-2 hover:underline"
+        className="mt-12 inline-block text-sm font-medium text-emerald underline-offset-2 hover:underline"
       >
         ← Volver al inicio
       </Link>

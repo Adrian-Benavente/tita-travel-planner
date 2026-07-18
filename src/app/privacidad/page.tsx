@@ -12,105 +12,112 @@ export default function PrivacidadPage() {
   return (
     <article className="section-pad mx-auto max-w-3xl pb-20 pt-28 md:pt-32">
       <p className="text-xs font-medium uppercase tracking-[0.25em] text-gold">
-        Documento legal · Borrador para revisión
+        Documento legal
       </p>
       <h1 className="font-display mt-3 text-3xl font-semibold text-emerald sm:text-4xl">
-        Política de protección de datos personales
+        Política de Protección de Datos Personales
       </h1>
-      <p className="mt-4 text-sm text-ink/60">
-        Última actualización: julio 2026. Responsable del tratamiento:{" "}
-        {site.legalName} (RUC {site.ruc}), marca {site.brand}.
-      </p>
 
       <div className="mt-10 space-y-8 text-base leading-relaxed text-ink/85">
         <section>
           <h2 className="font-display text-xl font-semibold text-emerald">
-            1. Marco normativo
+            1. Declaración de Cumplimiento
           </h2>
           <p className="mt-3">
-            Esta política se formula en el marco de la Ley N.º 29733, Ley de
-            Protección de Datos Personales, su Reglamento y disposiciones
-            aplicables en el Perú.
+            En cumplimiento de la{" "}
+            <strong className="font-semibold">
+              Ley N.° 29733 (Ley de Protección de Datos Personales del Perú)
+            </strong>{" "}
+            y su Reglamento (
+            <strong className="font-semibold">
+              Decreto Supremo N.° 003-2013-JUS
+            </strong>
+            ),{" "}
+            <strong className="font-semibold">ACOSTA LEAL BERTHA CLEOFE</strong>,
+            identificada con{" "}
+            <strong className="font-semibold">RUC 10445376006</strong> y con
+            domicilio en{" "}
+            <strong className="font-semibold">
+              A.H. SM de Porres de Campoy, Mz. B1 Lt. 1, San Juan de Lurigancho,
+              Lima
+            </strong>
+            , garantiza la confidencialidad, seguridad y el correcto uso de los
+            datos personales proporcionados por sus usuarios y clientes.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-semibold text-emerald">
-            2. Datos que podemos tratar
+            2. Finalidad del Tratamiento de Datos
           </h2>
           <p className="mt-3">
-            Nombre y apellidos, documento de identidad, datos de contacto
-            (teléfono, correo), preferencias de viaje, fechas, destinos,
-            información de acompañantes y datos necesarios para gestionar
-            reservas ante proveedores.
+            Los datos personales recopilados a través de nuestros formularios
+            web, correos electrónicos o canales de WhatsApp (como nombres,
+            apellidos, DNI o pasaporte, fecha de nacimiento, teléfono y correo
+            electrónico) serán utilizados estrictamente para las siguientes
+            finalidades:
           </p>
-        </section>
-
-        <section>
-          <h2 className="font-display text-xl font-semibold text-emerald">
-            3. Finalidad
-          </h2>
           <ul className="mt-3 list-disc space-y-2 pl-5">
-            <li>Brindar asesoría y planificación de viajes.</li>
-            <li>Gestionar cotizaciones, reservas y comunicación con usted.</li>
-            <li>Cumplir obligaciones legales, contables y tributarias.</li>
             <li>
-              Enviar información relacionada con su viaje o, solo con su
-              consentimiento, novedades del servicio.
+              Gestionar y emitir cotizaciones de viaje solicitadas
+              voluntariamente por el cliente.
+            </li>
+            <li>
+              Tramitar reservas de pasajes aéreos, reservas hoteleras y demás
+              servicios turísticos directamente con los proveedores finales,
+              tanto nacionales como internacionales.
+            </li>
+            <li>
+              Mantener una comunicación fluida con el cliente antes, durante y
+              después del viaje programado.
             </li>
           </ul>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-semibold text-emerald">
-            4. Conservación y seguridad
+            3. Transferencia de Datos
           </h2>
           <p className="mt-3">
-            Los datos se conservarán el tiempo necesario para la finalidad
-            indicada y las obligaciones legales. Se aplican medidas razonables
-            de confidencialidad y acceso restringido. Algunos datos podrán
-            compartirse con proveedores estrictamente necesarios para ejecutar
-            el viaje (aerolíneas, hoteles, etc.).
+            El usuario acepta que sus datos personales (únicamente aquellos
+            necesarios, como nombre, pasaporte y fecha de nacimiento) sean
+            transferidos a terceros proveedores, nacionales o extranjeros
+            (líneas aéreas, hoteles, transportistas y otros prestadores de
+            servicios turísticos), con el único objetivo de gestionar y
+            concretar los servicios de viaje reservados y contratados por el
+            titular de los datos.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-xl font-semibold text-emerald">
-            5. Derechos ARCO
+            4. Derechos ARCO
           </h2>
           <p className="mt-3">
-            Usted puede ejercer sus derechos de acceso, rectificación,
-            cancelación y oposición escribiendo a{" "}
+            Los usuarios de{" "}
+            <strong className="font-semibold">Tita Travel Planner</strong> tienen
+            el derecho de acceder, rectificar, cancelar u oponerse al
+            tratamiento de su información personal (Derechos ARCO), de
+            conformidad con la legislación peruana.
+          </p>
+          <p className="mt-3">
+            Para ejercer cualquiera de estos derechos, el usuario podrá enviar
+            una solicitud por escrito, adjuntando una copia de su DNI, al correo
+            electrónico oficial:{" "}
             <a
               href={site.emailUrl}
-              className="text-emerald underline-offset-2 hover:underline"
+              className="font-semibold text-emerald underline-offset-2 hover:underline"
             >
               {site.emails.primary}
-            </a>{" "}
-            o al WhatsApp {site.phones[0].display}, identificándose y precisando
-            su solicitud.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="font-display text-xl font-semibold text-emerald">
-            6. Contacto del responsable
-          </h2>
-          <p className="mt-3">
-            {site.legalName} — {site.address.line}, {site.address.district},{" "}
-            {site.address.city}, {site.address.country}. Correo:{" "}
-            {site.emails.primary}.
+            </a>
+            .
           </p>
         </section>
       </div>
 
-      <p className="mt-12 text-sm text-ink/55">
-        Este texto es un borrador orientativo. Debe ser revisado y aprobado por
-        la titular antes de su uso definitivo.
-      </p>
       <Link
         href="/"
-        className="mt-8 inline-block text-sm font-medium text-emerald underline-offset-2 hover:underline"
+        className="mt-12 inline-block text-sm font-medium text-emerald underline-offset-2 hover:underline"
       >
         ← Volver al inicio
       </Link>
