@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function EsnnaBanner() {
   return (
     <section
@@ -113,25 +115,14 @@ export function EsnnaBanner() {
 
         <div className="mt-10">
           <div className="overflow-hidden rounded-sm border border-ivory/20 bg-ivory/5">
-            <object
-              data="/docs/afiche-esnna.pdf"
-              type="application/pdf"
-              className="h-[min(70vh,560px)] w-full"
-              aria-label="Afiche de prevención ESNNA"
-            >
-              <p className="p-6 text-center text-sm text-ivory/80">
-                No se pudo mostrar el afiche en este navegador.{" "}
-                <a
-                  href="/docs/afiche-esnna.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-gold underline-offset-2 hover:underline"
-                >
-                  Abrir o descargar el PDF
-                </a>
-                .
-              </p>
-            </object>
+            <Image
+              src="/docs/afiche-esnna.png"
+              alt="Afiche oficial de prevención de la explotación sexual de niñas, niños y adolescentes (ESNNA) en el turismo"
+              width={2953}
+              height={4134}
+              className="h-auto w-full"
+              sizes="(max-width: 896px) 100vw, 896px"
+            />
           </div>
           <p className="mt-4 text-center">
             <a
