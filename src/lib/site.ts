@@ -10,11 +10,13 @@ export const site = {
   mission:
     "Ayudar a las personas a vivir experiencias de viaje inolvidables mediante una asesoría cercana, profesional y personalizada, brindando tranquilidad desde la planificación hasta el regreso a casa.",
   address: {
-    line: "A.H. SM de Porres de Campoy, Mz. B1 Lt. 1",
-    reference: "Alt. Grifo Shell de Av. Principal",
+    line: "Avenida Malecón Checa Eguiguren B 03 piso A.H San Martín de Porrea de Campoy",
+    reference: "",
     district: "San Juan de Lurigancho",
     city: "Lima",
     country: "Perú",
+    display:
+      "Avenida Malecón Checa Eguiguren B 03 piso A.H San Martín de Porrea de Campoy, San Juan de Lurigancho",
   },
   phones: [
     { label: "WhatsApp", number: "920614136", display: "+51 920614136", whatsapp: true },

@@ -41,8 +41,7 @@ export function Footer() {
             </li>
             <li>
               <span className="text-ink/55">Domicilio: </span>
-              {address.line}, {address.district}, {address.city},{" "}
-              {address.country}. {address.reference}.
+              {address.display}
             </li>
           </ul>
         </div>
